@@ -1,7 +1,7 @@
 {
   "name": "loading-states-testing",
   "version": "0.0.0",
-  "description": "Small description for loading-states-testing goes here",
+  "description": "Practicing with Ember loading states",
   "private": true,
   "directories": {
     "doc": "doc",

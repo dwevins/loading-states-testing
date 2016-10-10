@@ -1,10 +1,13 @@
 import Ember from 'ember';
-import delay from 'ember-delay/delay';
 
 export default Ember.Route.extend({
   model() {
-    this.setTimeout(() => {
-      return 'inner';
-    }, 3000);
+    return new Ember.RSVP.Promise(function(resolve) {
+      Ember.run.later(function() {
+        resolve([
+          "top"
+        ]);
+      }, 3000);
+    });
   }
 });

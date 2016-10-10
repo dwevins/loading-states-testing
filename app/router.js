@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('application.top', {path: '/'});
+  this.route('top', {path: "/"});
 });
 
 export default Router;
